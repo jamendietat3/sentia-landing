@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-nunito: 'Nunito', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF8F0;
+  color: #2D2A4A;
+  font-family: var(--font-nunito), sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #EDE4F7 0%, #FFF8F0 50%, #DDF1F9 100%);
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, #9B77D1 0%, #C8B4E8 100%);
+}
+
+.gradient-lead {
+  background: linear-gradient(135deg, #FDDDD2 0%, #FFF0C2 100%);
+}
+
+.shadow-sentia {
+  box-shadow: 0 4px 20px rgba(155, 119, 209, 0.15);
+}
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(155, 119, 209, 0.2);
+}
